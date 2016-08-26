@@ -15,9 +15,9 @@ public class ContaCorrente {
     private Double saldo;
     private String nomeCliente;
     private String cpf;
-    private Integer numConta;
+    private int numConta;
     
-    private static Integer quantContas = 1;
+    private static int quantContas = 1;
     
 
     public ContaCorrente(String nomeCliente, String cpf) {
@@ -48,7 +48,7 @@ public class ContaCorrente {
     }
     
     
-    public Integer getNumConta() {
+    public int getNumConta() {
         return numConta;
     }
     

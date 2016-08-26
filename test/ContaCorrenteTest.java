@@ -17,21 +17,37 @@ import static org.junit.Assert.*;
  * @author Lenovo
  */
 public class ContaCorrenteTest {
+
+    private ContaCorrente cc1;
+    private ContaCorrente cc2;
+    private Double valorDeposito = 500.0;
+
+    public ContaCorrenteTest() {
+        cc1 = new ContaCorrente("helio", "2828282");
+        cc2 = new ContaCorrente("fulano", "27272");
+    }
     
+    
+    @Test
+    public void testNumConta() {
+        assertEquals(cc1.getNumConta(), 1);
+        assertEquals(cc2.getNumConta(), 2);
+    }
    
     @Test
-    public void testSacar(){
+    public void testDepositar() {
         
-        ContaCorrente cc1 = new ContaCorrente("helio", "2828282");
-        ContaCorrente cc2 = new ContaCorrente("fulano", "27272");
-        
-        assertEquals(cc1.getNumConta(), Integer.valueOf(1));
-        assertEquals(cc2.getNumConta(), Integer.valueOf(2));
-        
-        Double valorDeposito = 500.0;
         assertTrue(cc1.depositar(valorDeposito));
         assertEquals(cc1.getSaldo(), valorDeposito);
         
+    }
+    
+    @Test
+    public void testSacar(){
+        
+        
+        cc1 = new ContaCorrente("helio", "2828282");
+        cc1.depositar(valorDeposito);
         Double valorSaque = 300.0;
         assertTrue(cc1.sacar(valorSaque));
         assertEquals(cc1.getSaldo(), 
