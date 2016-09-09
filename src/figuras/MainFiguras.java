@@ -32,6 +32,13 @@ public class MainFiguras {
         lista1.add(quad1);
         lista1.add(circulo1);
         desenhaTudo(lista1);
+        
+        Quadrado quad2 = new Quadrado(0, new Posicao(0,0));
+        quad2.darPirueta();
+        
+        Figura quad3 = new Quadrado(0, new Posicao(0,0));
+        //.darPirueta();
+        
     }
     
     public static void desenhaTudo(List<Figura> figuras) {

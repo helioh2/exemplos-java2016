@@ -5,10 +5,16 @@
  */
 package figuras;
 
+import java.awt.Rectangle;
+import java.awt.geom.Rectangle2D;
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+
 /**
  *
  * @author Lenovo
  */
+//CLASSE CONCRETA
 public class Circulo implements Figura {
 
     private double raio;
@@ -26,6 +32,8 @@ public class Circulo implements Figura {
         System.out.println("Desenhando circulo "
                 + "de raio "+raio+" e centro "
                 + "("+centro.getX()+","+centro.getY()+")");
+        
+        
     
     }
 
