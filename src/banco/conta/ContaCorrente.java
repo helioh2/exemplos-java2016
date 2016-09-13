@@ -12,10 +12,10 @@ package banco.conta;
  */
 public class ContaCorrente {
     
-    private Double saldo;
-    private String nomeCliente;
-    private String cpf;
-    private int numConta;
+        private Double saldo;
+        private String nomeCliente;
+        private String cpf;
+        private int numConta;
     
     private static int quantContas = 1;
     
