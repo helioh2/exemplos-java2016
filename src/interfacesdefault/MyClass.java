@@ -12,7 +12,6 @@ package interfacesdefault;
  */
 public class MyClass implements InterfaceA, InterfaceB {
  
- 
     @Override
     public void saySomething() {
         System.out.println("Hello World");
@@ -20,7 +19,9 @@ public class MyClass implements InterfaceA, InterfaceB {
  
     @Override
     public void sayHi() {
-       InterfaceA.super.sayHi();
+        InterfaceA.super.sayHi();
     }
+    
+   
  
 }

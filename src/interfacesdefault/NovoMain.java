@@ -16,6 +16,10 @@ public class NovoMain {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        MyClass mc = new MyClass();
+        mc.sayHi();
+        mc.saySomething();
+      
     }
     
 }

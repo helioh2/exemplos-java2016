@@ -5,11 +5,13 @@
  */
 package banco.funcionarios;
 
+import figuras.Figura;
+
 /**
  *
  * @author Lenovo
  */
-public class Engenheiro extends Funcionario {
+public class Engenheiro extends Funcionario implements Cloneable {
     
     public Engenheiro(String nome, String cpf) {
         super(nome, cpf);
@@ -19,7 +21,9 @@ public class Engenheiro extends Funcionario {
     public double getBonificacao() {
         return salario*0.15;
     }
+
     
+   
     
     
 }

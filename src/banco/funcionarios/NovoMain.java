@@ -5,7 +5,10 @@
  */
 package banco.funcionarios;
 
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
 
 /**
  *
@@ -45,6 +48,12 @@ public class NovoMain {
         cb.addBonificacao(cx1);
          
         System.out.println(cb.getTotalBonificacoes());
+        
+        
+        List<Funcionario> lista1 = Arrays.asList(f1, g1, cx1);      
+        System.out.println(lista1);
+        Collections.sort(lista1);
+        System.out.println(lista1);
     }
     
 }

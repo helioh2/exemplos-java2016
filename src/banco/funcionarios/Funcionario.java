@@ -9,7 +9,7 @@ package banco.funcionarios;
  *
  * @author Lenovo
  */
-public abstract class Funcionario {
+public abstract class Funcionario implements Comparable<Funcionario> {
     
     protected String nome;
     protected String cpf;
@@ -30,5 +30,15 @@ public abstract class Funcionario {
         System.out.println("%#$$$$$**$@#@");
     }
     
+    @Override
+    public int compareTo(Funcionario o) {
+        return this.nome.compareTo(o.nome);
+    }
+
+    @Override
+    public String toString() {
+        return nome;
+    }
+
     
 }
