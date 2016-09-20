@@ -9,11 +9,18 @@ package tripulacao2;
  *
  * @author Helio
  */
-public class Tripulacao {
+public class Tripulacao implements IPessoa{
     
     private int idTripulacao;
-    private Pessoa pessoa = new Pessoa();
+    private Pessoa pessoa;
 
+    public Tripulacao(int idTripulacao, Pessoa pessoa) {
+        this.idTripulacao = idTripulacao;
+        this.pessoa = pessoa;
+    }
+
+    
+    
     public int getIdTripulacao() {
         return idTripulacao;
     }
@@ -29,5 +36,14 @@ public class Tripulacao {
     public void setNome(String nome) {
         pessoa.setNome(nome);
     }
-    
+
+    @Override
+    public String getEndereco() {
+        return pessoa.getEndereco();
+    }
+
+    @Override
+    public void setEndereco(String endereco) {
+        pessoa.setEndereco(endereco);
+    }
 }

@@ -9,22 +9,38 @@ package tripulacao2;
  *
  * @author Helio
  */
-public class Pessoa {
+public class Pessoa implements IPessoa {
     private String nome;
     private String endereco;
 
+    public Pessoa() {
+    }
+
+    
+    
+    public Pessoa(String nome, String endereco) {
+        this.nome = nome;
+        this.endereco = endereco;
+    }
+
+    
+    
+    @Override
     public String getEndereco() {
         return endereco;
     }
 
+    @Override
     public void setEndereco(String endereco) {
         this.endereco = endereco;
     }
 
+    @Override
     public void setNome(String nome) {
         this.nome = nome;
     }
 
+    @Override
     public String getNome() {
         return nome;
     }

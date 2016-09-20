@@ -41,4 +41,5 @@ public abstract class Funcionario implements Comparable<Funcionario> {
     }
 
     
+    
 }
